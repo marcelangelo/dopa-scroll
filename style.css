@@ -262,7 +262,7 @@ body{
 
 @font-face{
     font-family: 'Sancreek';
-    src: url('/Projects/Practice_code/Practice/Resources/Fonts/Sancreek-Regular.ttf') format('truetype');
+    src: url('Sancreek-Regular.ttf') format('truetype');
 }
 
 x-sign2 {
@@ -296,7 +296,7 @@ x-sign2 {
 }
 
 .scroll-top{
-    background: url(/Projects/Practice_code/Practice/Resources/Images/scroll_top.png);
+    background: url('https://raw.githubusercontent.com/marcelangelo/dopa-scroll/main/scroll_top.png');
     height: 180px;
     position: relative;
     background-repeat: no-repeat;
