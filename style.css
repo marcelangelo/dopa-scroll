@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(1, 123, 172);
+    position: fixed;
+    z-index: 10;
+    background-image: url('https://raw.githubusercontent.com/marcelangelo/dopamine-web/main/Background.jpg');
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header .heading{
+    width: 95%;
+    padding-left: 2%;
+    align-items: center;
+}
+
+.header .heading .heading h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: tomato;
+    background: aqua;
+    width: 200px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 10px;
+    border: black solid 3px; 
+    
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
+    --stroke: 0.025em;
+    --background-color: white;
+    --stroke-color: lightblue;
+    
+    text-shadow: 
+      
+      var(--x-offset)
+      var(--y-offset)
+      0px
+      var(--background-color), 
+      
+      calc( var(--x-offset) - var(--stroke) )
+      calc( var(--y-offset) + var(--stroke) )
+      0px
+      var(--stroke-color);
+    
+  }
+@supports ( text-shadow: 1px 1px 1px 1px black ) {
+    h1 {
+        text-shadow:
+        
+        var(--x-offset)
+        var(--y-offset)
+        0px
+        0px
+        var(--background-color), 
+        
+        var(--x-offset) 
+        var(--y-offset)
+        var(--stroke)
+        0px
+        var(--stroke-color);
+        
+    }
+}
+
+.header .subHeading{
+    gap: 40px;
+    width: 30%;
+    align-items: center;
+}
+
+x-sign {
+    font-size: 30px;
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+    0 0 100px var(--color1),
+    0 0 200px var(--color2),
+    0 0 400px var(--color3),
+    0 0 600px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+    color: lightpink;
+    --color1: pink;
+    --color2: orangered;
+    --color3: red;
+    --color4: magenta;
+    font-family: sans-serif;
+  }
+
+.header ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.header ul li a{
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    color: #ffffff;
+    position: absolute;
+    background-color: rgb(255, 0, 95)
+}
+
+.container{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.boxes a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.boxes{
+    border-radius: 20px;
+    background: linear-gradient(0deg, rgb(0, 143, 199), white);
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.box-container{
+    padding: 30px;
+    display: flex;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+.box5{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+.box6{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+.box7{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+.box8{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+.box9{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+.box10{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+.box11{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+.box12{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 183, 255);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.article-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid black 2px;
+    padding-bottom: 50px;
+    background: yellow;
+    width: 100%;
+}
+
+.article-heading p{
+    color: rgb(59, 59, 59);
+}
+
+@font-face{
+    font-family: 'Sancreek';
+    src: url('/Projects/Practice_code/Practice/Resources/Fonts/Sancreek-Regular.ttf') format('truetype');
+}
+
+x-sign2 {
+    font-size: 150px;
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 300px var(--color3),
+      0 0 500px var(--color4);
+    will-change: filter, color;
+    filter: saturate(70%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+    color: rgb(182, 255, 192);
+    --color1: pink;
+    --color2: orangered;
+    --color3: red;
+    --color4: magenta;
+    font-family: 'Sancreek';
+  }
+
+.flames{
+    position: relative;
+    z-index: 2;
+    margin-bottom: -220px;
+    transform: rotate(180deg);
+    background-color: rgb(255, 0, 95);
+    height: 350px;
+    background: url('https://raw.githubusercontent.com/marcelangelo/dopamine-web/main/360_F_239259446_j6EU1lI6FazmVCNqw01HnBvVs2kZsEUS.png');
+}
+
+.scroll-top{
+    background: url(/Projects/Practice_code/Practice/Resources/Images/scroll_top.png);
+    height: 180px;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 850px;
+    z-index: 3;
+    scale: 1.2022;
+    margin-left: 542px;
+}
+
+.scroll{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: -5px;
+    z-index: 3;
+    position: relative;
+}
+
+.article{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 5%;
+    z-index: 3;
+    margin-top: -300px;
+}
+
+.article .side-note{
+    margin-top: 250px;
+    max-width: 400px;
+    min-width: 300px;
+    border-radius: 20px;
+    text-align: left;
+    padding: 30px 30px 20px 30px;
+    border: solid black 2px;
+    color: black;
+    background:tomato;
+    box-shadow: 10px 10px 10px 0px rgba(0, 255, 255, 0.7);
+}
+
+.article .side-note h2{
+    color: black;
+}
+
+.article .side-note p{
+    font-size: 22px;
+}
+
+.article .main{
+    box-shadow: 10px 10px 10px 0px rgba(0, 255, 255, 0.7);
+    display: flex;
+    z-index: 1;
+    margin-top: 280px;
+
+}
+
+.article .main-article{
+    max-width: 700px;
+    min-width: 500px;
+    text-align: left;
+    height: 100%;
+    padding: 30px 30px 20px 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(248, 248, 248);
+    border-left: solid black 2px;
+    border-right: solid black 4px;
+    border-bottom: solid black 4px;
+}
+
+.article .main-article h2{
+    color: black;
+}
+
+.article .main-article p{
+    font-size: 22px;
+}
+
+.article .side-info{
+    margin-top: 250px;
+    max-width: 400px;
+    min-width: 300px;
+    border-radius: 20px;
+    text-align: left;
+    padding: 30px 30px 20px 30px;
+    border: solid black 2px;
+    color: black;
+    background:tomato;
+    box-shadow: 10px 10px 10px 0px rgba(0, 255, 255, 0.7); 
+}
+
+.article .side-info h2{
+    color: black;
+}
+
+.article .main-article ul{
+    color: rgb(0, 0, 0);
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.article .main-article ul li{
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+.article .side-note ul{
+    color: rgb(0, 0, 0);
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.article .side-note ul li{
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+.article .side-info ul{
+    color: rgb(0, 0, 0);
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.article .side-info ul li{
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+.article .side-info p{
+    font-size: 22px;
+}
+
+.bold{
+    font-weight: bold;
+}
