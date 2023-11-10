@@ -254,10 +254,13 @@ body{
     padding-bottom: 50px;
     background: yellow;
     width: 100%;
+    font-family: monospace;
+    font-size: 20px;
 }
 
 .article-heading p{
     color: rgb(59, 59, 59);
+    font-family: monospace;
 }
 
 @font-face{
